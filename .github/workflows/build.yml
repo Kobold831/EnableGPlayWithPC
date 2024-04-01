@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  push:
+    paths-ignore:
+      - docs/**
+      - .git*
+      - LICENSE
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
+
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        id: cache
+        with:
+          path: packages
+          key: ${{ hashFiles('EnableGPlayWithPC\packages.config') }}
+    
+      - name: MSBuild
+        run: |
+          if ("${{ steps.cache.outputs.cache-hit }}" -ne "true") { nuget restore }
+          MSBuild .\EnableGPlayWithPC.sln -property:Configuration=Debug
+          @(
+            "version=Ver.$((Get-Content -Path .\EnableGPlayWithPC\Properties\AssemblyInfo.cs | Select-String -Pattern AssemblyVersion | Out-String -Stream | ?{ $_ -ne '' } | %{ $_.Split('"')[1] }))"
+            "commit=$("${{ github.sha }}".Substring(0,7))"
+          ) | Out-File -FilePath $Env:GITHUB_ENV -Encoding UTF8 -Append
+          
+      - name: Upload built artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: EnableGPlayWithPC(${{ env.version }}@${{ env.commit }})
+          path: EnableGPlayWithPC\bin\Debug\ILMerge
+          if-no-files-found: error

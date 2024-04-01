@@ -118,79 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AdbPath" xml:space="preserve">
-    <value>adb.exe</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
-  </data>
-  <data name="Dialog_404_Desc" xml:space="preserve">
-    <value>{0} is not found.
-Please check to exist that file.</value>
-  </data>
-  <data name="Dialog_404_Inst" xml:space="preserve">
-    <value>{0} is not found</value>
-  </data>
-  <data name="Dialog_Adb404_Desc" xml:space="preserve">
-    <value>adb.exe is not found.
-Please check adb.exe's path.</value>
-  </data>
-  <data name="Dialog_Adb404_Inst" xml:space="preserve">
-    <value>adb.exe is not found</value>
-  </data>
-  <data name="Dialog_PermNotGranted_Desc" xml:space="preserve">
-    <value>Unable to grant "{0}" permission to {1}.
-Apps may not work perfectly.</value>
-  </data>
-  <data name="Dialog_PermNotGranted_Inst" xml:space="preserve">
-    <value>Unable to grant permission to {0}</value>
+    <value>adb\adb.exe</value>
   </data>
   <data name="Dialog_Not_Benesse_Tab_Desc" xml:space="preserve">
-    <value>{0} is not a benesse product tablet.
-Would you like continue?</value>
+    <value>{0}は対象端末ではありません。
+このソフトウェアは使用できません。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。</value>
   </data>
-  <data name="Dialog_Not_Benesse_Tab_Inst" xml:space="preserve">
-    <value>Benesse tablet not found</value>
+  <data name="Dialog_PermNotGranted_Desc" xml:space="preserve">
+    <value>{0}に権限を付与できませんでした。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。</value>
+  </data>
+  <data name="Dialog_Process_Error_Adb" xml:space="preserve">
+    <value>問題が発生したためデバイスと通信できませんでした。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。
+以下を確認してから再実行してください：
+・デバイスの接続
+・このPCからのUSBデバッグの許可
+
+取得したデバイス名：{0}</value>
+  </data>
+  <data name="Dialog_Process_Error_Adb404" xml:space="preserve">
+    <value>{0}が見つかりません。
+適切にファイルが解凍されなかったかファイルが削除された可能性があります。
+再ダウンロードしてください。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。</value>
+  </data>
+  <data name="Dialog_Process_Error_File404" xml:space="preserve">
+    <value>{0}が見つかりません。
+適切にファイルが解凍されなかったかファイルが削除された可能性があります。
+再ダウンロードしてください。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。</value>
+  </data>
+  <data name="Dialog_Process_Error_In" xml:space="preserve">
+    <value>処理中にエラーが発生しました。
+{0}をインストールできませんでした。
+詳細情報：
+{1}</value>
+  </data>
+  <data name="Dialog_Process_Error_Title" xml:space="preserve">
+    <value>処理エラー</value>
+  </data>
+  <data name="Dialog_Process_Error_Un" xml:space="preserve">
+    <value>{0}をアンインストールできませんでした。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。
+以下を確認してから再実行してください：
+・アンインストールブロッカーが設定されていないこと
+・デバイス管理者に設定されていないこと
+
+詳細情報：
+{1}</value>
+  </data>
+  <data name="Dialog_Process_Error_Unknown" xml:space="preserve">
+    <value>予期しないエラーが発生しました。
+再実行してください。
+エラーが繰り返し発生する場合は開発者にお問い合わせください。
+詳細情報：
+{0}</value>
   </data>
   <data name="Dialog_Successed_Desc" xml:space="preserve">
-    <value>Google functions are enabled!
-You can continue using your device.</value>
+    <value>Google の機能は有効化されました！
+デバイスを再起動しました。</value>
   </data>
   <data name="Dialog_Successed_Inst" xml:space="preserve">
-    <value>Successed!</value>
+    <value>成功しました！</value>
   </data>
   <data name="Dialog_TooManyDevices_Desc" xml:space="preserve">
-    <value>Too many connected devices.
-Please connect only one devices.</value>
+    <value>２つ以上のデバイスが接続されているため続行できません。
+以下を確認してから再実行してください：
+ひとつのデバイスのみ接続されているか確認
+エラーが繰り返し発生する場合は開発者にお問い合わせください。</value>
   </data>
-  <data name="Dialog_TooManyDevices_Inst" xml:space="preserve">
-    <value>Too many connected devices</value>
+  <data name="Information" xml:space="preserve">
+    <value>バージョン : {0} / Kobold Ver.
+
+Copyright(c) 2020 AioiLight</value>
   </data>
-  <data name="Dialog_UnableToConnect_Desc" xml:space="preserve">
-    <value>Unable to connect your device.
-Please check connection.</value>
-  </data>
-  <data name="Dialog_UnableToConnect_Inst" xml:space="preserve">
-    <value>Unable to connect your device</value>
-  </data>
-  <data name="FileSelector_Extension" xml:space="preserve">
-    <value>.apk</value>
-  </data>
-  <data name="FileSelector_Title" xml:space="preserve">
-    <value>Open .apk file</value>
-  </data>
-  <data name="NotGranted_Cancel" xml:space="preserve">
-    <value>Stop install processing</value>
-  </data>
-  <data name="NotGranted_Continue" xml:space="preserve">
-    <value>Ignore error, and continue processing</value>
-  </data>
-  <data name="NotGranted_HideDetail" xml:space="preserve">
-    <value>Hide details</value>
-  </data>
-  <data name="NotGranted_ShowDetail" xml:space="preserve">
-    <value>Show details</value>
+  <data name="Information_Title" xml:space="preserve">
+    <value>バージョン情報</value>
   </data>
 </root>

@@ -1,18 +1,16 @@
-﻿namespace EnableGPlayWithPC
-{
-    internal static class Packages
-    {
-        internal static string Vending = "com.android.vending";
-        internal static string GMS = "com.google.android.gms";
-        internal static string GSF = "com.google.android.gsf";
-        internal static string GSFLogin = "com.google.android.gsf.login";
+﻿namespace EnableGPlayWithPC {
+    internal static class Packages {
+        internal static string[] Package =
+        [
+            "com.google.android.gsf",
+            "com.google.android.gms",
+            "com.android.vending"
+        ];
 
-        internal static string[] PackageNames = new string[]
-        {
-            GMS,
-            GSFLogin,
-            GSF,
-            Vending
-        };
+        internal static string[] PackageNameList = [
+            "Googleサービスフレームワーク",
+            "Google Play開発者サービス",
+            "Google Playストア"
+        ];
     }
 }

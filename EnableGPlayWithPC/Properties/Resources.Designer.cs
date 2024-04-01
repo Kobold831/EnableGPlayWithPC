@@ -19,7 +19,7 @@ namespace EnableGPlayWithPC.Properties {
     // または Visual Studio のようなツールを使用して自動生成されました。
     // メンバーを追加または削除するには、.ResX ファイルを編集して、/str オプションと共に
     // ResGen を実行し直すか、または VS プロジェクトをビルドし直します。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,7 +61,7 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   adb.exe に類似しているローカライズされた文字列を検索します。
+        ///   adb\adb.exe に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string AdbPath {
             get {
@@ -70,64 +70,9 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Cancel に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Cancel {
-            get {
-                return ResourceManager.GetString("Cancel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Continue に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Continue {
-            get {
-                return ResourceManager.GetString("Continue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   {0} is not found.
-        ///Please check to exist that file. に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_404_Desc {
-            get {
-                return ResourceManager.GetString("Dialog_404_Desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   {0} is not found に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_404_Inst {
-            get {
-                return ResourceManager.GetString("Dialog_404_Inst", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   adb.exe is not found.
-        ///Please check adb.exe&apos;s path. に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_Adb404_Desc {
-            get {
-                return ResourceManager.GetString("Dialog_Adb404_Desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   adb.exe is not found に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_Adb404_Inst {
-            get {
-                return ResourceManager.GetString("Dialog_Adb404_Inst", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   {0} is not a benesse product tablet.
-        ///Would you like continue? に類似しているローカライズされた文字列を検索します。
+        ///   {0}は対象端末ではありません。
+        ///このソフトウェアは使用できません。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Not_Benesse_Tab_Desc {
             get {
@@ -136,17 +81,8 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Benesse tablet not found に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_Not_Benesse_Tab_Inst {
-            get {
-                return ResourceManager.GetString("Dialog_Not_Benesse_Tab_Inst", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Unable to grant &quot;{0}&quot; permission to {1}.
-        ///Apps may not work perfectly. に類似しているローカライズされた文字列を検索します。
+        ///   {0}に権限を付与できませんでした。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_PermNotGranted_Desc {
             get {
@@ -155,17 +91,97 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Unable to grant permission to {0} に類似しているローカライズされた文字列を検索します。
+        ///   問題が発生したためデバイスと通信できませんでした。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。
+        ///以下を確認してから再実行してください：
+        ///・デバイスの接続
+        ///・このPCからのUSBデバッグの許可
+        ///
+        ///取得したデバイス名：{0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Dialog_PermNotGranted_Inst {
+        internal static string Dialog_Process_Error_Adb {
             get {
-                return ResourceManager.GetString("Dialog_PermNotGranted_Inst", resourceCulture);
+                return ResourceManager.GetString("Dialog_Process_Error_Adb", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Google functions are enabled!
-        ///You can continue using your device. に類似しているローカライズされた文字列を検索します。
+        ///   {0}が見つかりません。
+        ///適切にファイルが解凍されなかったかファイルが削除された可能性があります。
+        ///再ダウンロードしてください。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_Adb404 {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_Adb404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0}が見つかりません。
+        ///適切にファイルが解凍されなかったかファイルが削除された可能性があります。
+        ///再ダウンロードしてください。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_File404 {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_File404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   処理中にエラーが発生しました。
+        ///{0}をインストールできませんでした。
+        ///詳細情報：
+        ///{1} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_In {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_In", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   処理エラー に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_Title {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0}をアンインストールできませんでした。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。
+        ///以下を確認してから再実行してください：
+        ///・アンインストールブロッカーが設定されていないこと
+        ///・デバイス管理者に設定されていないこと
+        ///
+        ///詳細情報：
+        ///{1} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_Un {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_Un", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   予期しないエラーが発生しました。
+        ///再実行してください。
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。
+        ///詳細情報：
+        ///{0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_Unknown {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Google の機能は有効化されました！
+        ///デバイスを再起動しました。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Successed_Desc {
             get {
@@ -174,7 +190,7 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Successed! に類似しているローカライズされた文字列を検索します。
+        ///   成功しました！ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Successed_Inst {
             get {
@@ -183,8 +199,10 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Too many connected devices.
-        ///Please connect only one devices. に類似しているローカライズされた文字列を検索します。
+        ///   ２つ以上のデバイスが接続されているため続行できません。
+        ///以下を確認してから再実行してください：
+        ///ひとつのデバイスのみ接続されているか確認
+        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_TooManyDevices_Desc {
             get {
@@ -193,84 +211,22 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   Too many connected devices に類似しているローカライズされた文字列を検索します。
+        ///   バージョン : {0} / Kobold Ver.
+        ///
+        ///Copyright(c) 2020 AioiLight に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Dialog_TooManyDevices_Inst {
+        internal static string Information {
             get {
-                return ResourceManager.GetString("Dialog_TooManyDevices_Inst", resourceCulture);
+                return ResourceManager.GetString("Information", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Unable to connect your device.
-        ///Please check connection. に類似しているローカライズされた文字列を検索します。
+        ///   バージョン情報 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Dialog_UnableToConnect_Desc {
+        internal static string Information_Title {
             get {
-                return ResourceManager.GetString("Dialog_UnableToConnect_Desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Unable to connect your device に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string Dialog_UnableToConnect_Inst {
-            get {
-                return ResourceManager.GetString("Dialog_UnableToConnect_Inst", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   .apk に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string FileSelector_Extension {
-            get {
-                return ResourceManager.GetString("FileSelector_Extension", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Open .apk file に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string FileSelector_Title {
-            get {
-                return ResourceManager.GetString("FileSelector_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Stop install processing に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string NotGranted_Cancel {
-            get {
-                return ResourceManager.GetString("NotGranted_Cancel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ignore error, and continue processing に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string NotGranted_Continue {
-            get {
-                return ResourceManager.GetString("NotGranted_Continue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Hide details に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string NotGranted_HideDetail {
-            get {
-                return ResourceManager.GetString("NotGranted_HideDetail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Show details に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string NotGranted_ShowDetail {
-            get {
-                return ResourceManager.GetString("NotGranted_ShowDetail", resourceCulture);
+                return ResourceManager.GetString("Information_Title", resourceCulture);
             }
         }
     }
