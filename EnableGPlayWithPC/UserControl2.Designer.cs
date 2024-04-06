@@ -37,7 +37,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(0, 150);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(1122, 331);
@@ -46,10 +46,10 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(0, 102);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(0);
             this.progressBar1.MarqueeAnimationSpeed = 40;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1124, 38);
+            this.progressBar1.Size = new System.Drawing.Size(1123, 38);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 1;
             // 
@@ -61,15 +61,16 @@
             this.label1.Location = new System.Drawing.Point(4, 48);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1118, 48);
+            this.label1.Size = new System.Drawing.Size(1113, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Location = new System.Drawing.Point(886, 493);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(237, 72);
             this.button1.TabIndex = 3;
@@ -90,7 +91,7 @@
             this.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(1128, 570);
+            this.Size = new System.Drawing.Size(1123, 570);
             this.ResumeLayout(false);
             this.PerformLayout();
 

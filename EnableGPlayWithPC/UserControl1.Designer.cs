@@ -40,7 +40,7 @@
             this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(0);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.ScrollAlwaysVisible = true;
             this.checkedListBox1.Size = new System.Drawing.Size(1124, 312);
@@ -49,27 +49,25 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(0, 343);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(888, 179);
+            this.textBox1.Size = new System.Drawing.Size(892, 179);
             this.textBox1.TabIndex = 24;
             // 
             // button
             // 
-            this.button.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button.BackColor = System.Drawing.SystemColors.Control;
             this.button.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button.Font = new System.Drawing.Font("Meiryo UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button.Location = new System.Drawing.Point(900, 445);
+            this.button.Location = new System.Drawing.Point(898, 442);
             this.button.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.button.MaximumSize = new System.Drawing.Size(218, 80);
-            this.button.MinimumSize = new System.Drawing.Size(218, 80);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(218, 80);
+            this.button.Size = new System.Drawing.Size(220, 80);
             this.button.TabIndex = 25;
             this.button.Text = "実行";
             this.button.UseVisualStyleBackColor = false;
