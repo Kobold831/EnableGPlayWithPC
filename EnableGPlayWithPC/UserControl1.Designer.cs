@@ -40,19 +40,21 @@
             this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.ScrollAlwaysVisible = true;
-            this.checkedListBox1.Size = new System.Drawing.Size(749, 200);
+            this.checkedListBox1.Size = new System.Drawing.Size(1124, 312);
             this.checkedListBox1.TabIndex = 23;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 206);
+            this.textBox1.Location = new System.Drawing.Point(0, 343);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(593, 109);
+            this.textBox1.Size = new System.Drawing.Size(888, 179);
             this.textBox1.TabIndex = 24;
             // 
             // button
@@ -62,12 +64,12 @@
             this.button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button.Location = new System.Drawing.Point(600, 267);
-            this.button.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
-            this.button.MaximumSize = new System.Drawing.Size(145, 48);
-            this.button.MinimumSize = new System.Drawing.Size(145, 48);
+            this.button.Location = new System.Drawing.Point(900, 445);
+            this.button.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
+            this.button.MaximumSize = new System.Drawing.Size(218, 80);
+            this.button.MinimumSize = new System.Drawing.Size(218, 80);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(145, 48);
+            this.button.Size = new System.Drawing.Size(218, 80);
             this.button.TabIndex = 25;
             this.button.Text = "実行";
             this.button.UseVisualStyleBackColor = false;
@@ -77,9 +79,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel1.Location = new System.Drawing.Point(3, 318);
+            this.linkLabel1.Location = new System.Drawing.Point(4, 530);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(56, 12);
+            this.linkLabel1.Size = new System.Drawing.Size(109, 25);
             this.linkLabel1.TabIndex = 26;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "linkLabel1";
@@ -87,15 +90,18 @@
             // 
             // UserControl1
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkedListBox1);
-            this.MaximumSize = new System.Drawing.Size(749, 342);
-            this.MinimumSize = new System.Drawing.Size(749, 342);
+            this.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(749, 342);
+            this.Size = new System.Drawing.Size(1124, 555);
             this.ResumeLayout(false);
             this.PerformLayout();
 
