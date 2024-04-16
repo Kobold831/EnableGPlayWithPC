@@ -11,8 +11,8 @@
 この機能は以下のアプリケーションソフトウェアをインストールします。
 
 - Googleサービスフレームワーク
-- Google Play 開発者サービス
-- Google Play ストア
+- Google Play開発者サービス
+- Google Playストア
 
 ## 対応機種
 
@@ -25,14 +25,14 @@
 
 このソフトウェアの動作には以下が必要です。
 
-- Windows 10またはWindows 11
-- .NET Framework 4.8.0
+- Windows 7 以降
+- .NET Framework 4.8
 
 ## イメージ
 
 画像は開発中のものです。実際の仕様とは異なる場合があります。
 
-![EXE](images/screenshot-03.png)
+[![](images/screenshot-03.png)](#)
 
 <details><summary><b>チャレンジパッド２シリーズ</b></summary>
   
@@ -53,7 +53,7 @@
 > 
 > チャレンジパッド３またはNeoでは、GAppsを完全に動作させることはできません。
 > 
-> チャレンジパッドNextの場合は、**完全に動作できます**。
+> チャレンジパッドNextの場合は、**ほぼ完全に動作します**。
 
 ## ダウンロード
 
