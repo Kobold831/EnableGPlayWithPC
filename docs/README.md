@@ -26,7 +26,9 @@
 このソフトウェアの動作には以下が必要です。
 
 - Windows 7 以降
-- .NET Framework 4.8
+- .NET Framework 4.8  
+  ダウンロードは[**こちら**](https://dotnet.microsoft.com/ja-jp/download/dotnet-framework/net48)  
+  ※Windows 7 / 8.1 の場合のみダウンロード＆インストールを行ってください。
 
 ## イメージ
 
