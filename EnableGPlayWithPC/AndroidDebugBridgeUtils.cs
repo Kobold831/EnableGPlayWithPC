@@ -1,45 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Reflection;
 using SharpAdbClient;
 
 namespace EnableGPlayWithPC {
     internal static class AndroidDebugBridgeUtils {
-
-        /// <summary>
-        /// アプリのインストール
-        /// </summary>
-        /// <param name="deviceData">デバイスデータ</param>
-        /// <param name="fileName">ファイル名</param>
-        /// <returns>成功したかどうか。</returns>
-        internal static bool InstallPackage(DeviceData deviceData, string fileName) {
-            var appDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            var installCmd = $"pm install -r -g /data/local/tmp/base.apk";
-            var adbClient = new AdbClient();
-
-            /* /data/local/tmp/ へコピー */
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe", "/c " + Path.Combine(appDir, Properties.Resources.AdbPath) + " push " + fileName + " /data/local/tmp/base.apk");
-            processStartInfo.CreateNoWindow = true;
-            processStartInfo.UseShellExecute = false;
-            Process process = Process.Start(processStartInfo);
-            process.WaitForExit();
-            process.Close();
-
-            /* /data/local/tmp/base.apk をインストール */
-            ConsoleOutputReceiver receiver = new ConsoleOutputReceiver();
-            adbClient.ExecuteRemoteCommand(installCmd, deviceData, receiver);
-
-            var result = receiver.ToString();
-
-            if (!IsInstallSuccessful(result)) {
-                /* インストールに失敗した */
-                return false;
-            }
-
-            return true;
-        }
 
         /// <summary>
         /// ADBからの文字列を調べて、インストールに成功しているかどうかチェックする。
@@ -162,12 +126,6 @@ namespace EnableGPlayWithPC {
                 /* 失敗 */
                 return false;
             }
-        }
-        internal static void putInt(DeviceData deviceData, string str, string value) {
-            var adbClient = new AdbClient();
-            var installCmd = $"settings put system {str} {value}";
-
-            adbClient.ExecuteRemoteCommand(installCmd, deviceData, null);
         }
     }
 }

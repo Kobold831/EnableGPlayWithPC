@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static EnableGPlayWithPC.Main;
 
 namespace EnableGPlayWithPC {
     public partial class UserControl1 : UserControl {
@@ -14,8 +10,6 @@ namespace EnableGPlayWithPC {
 
         /* 実行リスト */
         readonly string[] str = { "Googleサービスの有効化" };
-
-        bool selfUpdate = false;
 
         public static UserControl1 GetInstance() {
             return instance;
@@ -39,27 +33,12 @@ namespace EnableGPlayWithPC {
         }
 
         public async void Button_Click(object sender, EventArgs e) {
-            Task task;
             Main.GetInstance().ChangeUserControl();
-            if (selfUpdate) {
-                task = Task.Run(Main.GetInstance().SelfUpdateAsync);
-            } else {
-                task = Task.Run(Main.GetInstance().TryEnableGoogleServices);
-            }
-            await task;
+            await (Task.Run(Main.GetInstance().TryEnableGoogleServices));
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             Process.Start(@"https://github.com/Kobold831/EnableGPlayWithPC");
-        }
-
-        public void SelfUpdate() {
-            selfUpdate = true;
-            var ms = new MemoryStream(Encoding.UTF8.GetBytes(File.ReadAllText(@"Check.json")));
-            ms.Seek(0, SeekOrigin.Begin);
-            var data = new DataContractJsonSerializer(typeof(JsonData)).ReadObject(ms) as JsonData;
-
-            WriteConsole("アップデートがあります。実行を押して、アップデートを適用してください。\r\n" + "アップデート内容：" + data.JsonEgp.JsonUpdate.Description);
         }
     }
 }

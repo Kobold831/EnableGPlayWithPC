@@ -70,9 +70,8 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   {0}は対象端末ではありません。
-        ///このソフトウェアは使用できません。
-        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        ///   ｢{0}｣ は対象端末ではありません。
+        ///このソフトウェアは使用できません。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Not_Benesse_Tab_Desc {
             get {
@@ -81,8 +80,7 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   {0}に権限を付与できませんでした。
-        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        ///   ｢{0}｣ に権限を付与できませんでした。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_PermNotGranted_Desc {
             get {
@@ -92,7 +90,6 @@ namespace EnableGPlayWithPC.Properties {
         
         /// <summary>
         ///   問題が発生したためデバイスと通信できませんでした。
-        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。
         ///以下を確認してから再実行してください：
         ///・デバイスの接続
         ///・このPCからのUSBデバッグの許可
@@ -106,10 +103,9 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   {0}が見つかりません。
-        ///適切にファイルが解凍されなかったかファイルが削除された可能性があります。
-        ///再ダウンロードしてください。
-        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        ///   ｢{0}｣ が見つかりません。
+        ///適切にファイルが展開されなかったかファイルが削除された可能性があります。
+        ///公式サイトから再ダウンロードしてください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Process_Error_Adb404 {
             get {
@@ -118,10 +114,9 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   {0}が見つかりません。
+        ///   ｢{0}｣ が見つかりません。
         ///適切にファイルが解凍されなかったかファイルが削除された可能性があります。
-        ///再ダウンロードしてください。
-        ///エラーが繰り返し発生する場合は開発者にお問い合わせください。 に類似しているローカライズされた文字列を検索します。
+        ///公式サイトから再ダウンロードしてください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Dialog_Process_Error_File404 {
             get {
@@ -131,7 +126,7 @@ namespace EnableGPlayWithPC.Properties {
         
         /// <summary>
         ///   処理中にエラーが発生しました。
-        ///{0}をインストールできませんでした。
+        ///｢{0}｣ をインストールできませんでした。
         ///詳細情報：
         ///{1} に類似しているローカライズされた文字列を検索します。
         /// </summary>
@@ -151,7 +146,7 @@ namespace EnableGPlayWithPC.Properties {
         }
         
         /// <summary>
-        ///   {0}をアンインストールできませんでした。
+        ///   ｢{0}｣ をアンインストールできませんでした。
         ///エラーが繰り返し発生する場合は開発者にお問い合わせください。
         ///以下を確認してから再実行してください：
         ///・アンインストールブロッカーが設定されていないこと
@@ -176,6 +171,17 @@ namespace EnableGPlayWithPC.Properties {
         internal static string Dialog_Process_Error_Unknown {
             get {
                 return ResourceManager.GetString("Dialog_Process_Error_Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   チャレンジパッド３・Neo・Next のサポートは終了しました。
+        ///チャレンジパッド３・Neo・Next で Google サービスを導入するには root 化が必要です。
+        ///現在の端末：{0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Dialog_Process_Error_Unsupported {
+            get {
+                return ResourceManager.GetString("Dialog_Process_Error_Unsupported", resourceCulture);
             }
         }
         
@@ -213,11 +219,23 @@ namespace EnableGPlayWithPC.Properties {
         /// <summary>
         ///   バージョン : {0} / Kobold Ver.
         ///
-        ///Copyright(c) 2020 AioiLight に類似しているローカライズされた文字列を検索します。
+        /// に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   
+        ///[実行] を押すと、Google サービスのインストールが開始されます。
+        ///タブレットは自動で再起動します。
+        ///処理中はタブレットに触れないでください！ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Information_Message {
+            get {
+                return ResourceManager.GetString("Information_Message", resourceCulture);
             }
         }
         
