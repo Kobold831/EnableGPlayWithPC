@@ -2,6 +2,10 @@
 
 チャレンジパッドで、Google Playの機能の一部を使えるようにするツールです。
 
+> [!IMPORTANT]
+> **EnableGPlayWithPC** は、**Ver.1.3.0.0** をもちましてサポートを終了しました。  
+> 最終バージョンである **Ver.1.3.0.0** では、チャレンジパッド２のみご利用いただけます。
+
 ## 機能
 
 ### Googleサービスの有効化
@@ -35,9 +39,7 @@
   ダウンロードは[**こちら**](https://dotnet.microsoft.com/ja-jp/download/dotnet-framework/net48)  
   ※Windows 7 / 8.1 の場合のみダウンロード＆インストールを行ってください。
 
-## イメージ
-
-画像は開発中のものです。実際の仕様とは異なる場合があります。
+## サンプル画像
 
 [![](images/screenshot-03.png)](#)
 
@@ -48,14 +50,12 @@
 
 ## 注意事項
 
-> [!NOTE]
-> GApps の一部の機能を正常に動作させるために DchaService を使用します。
+> [!WARNING]
+> **Google Play開発者サービス** の一部の機能を正常に動作させるために **DchaService** を使用します。
 
 ## ダウンロード
 
-- 以下の Google ドライブのリンクからダウンロードできます。
-- 容量が大きいため、ネットワークが不安定な場合時間がかかる可能性があります。
-- ファイルはバージョン管理しているため URL は共通です。
-- 過去のバージョンはダウンロードできませんのでご了承ください。
+> [!TIP]
+> 容量が大きいため、ネットワークが不安定な場合時間がかかる可能性があります。
 
 [**EnableGPlayWithPC**.zip](https://drive.usercontent.google.com/download?id=1TpoUzxpshhr7mFDoYffArNWFo9tCWsBD)
