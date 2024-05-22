@@ -52,10 +52,3 @@
 
 > [!WARNING]
 > **Google Play開発者サービス** の一部の機能を正常に動作させるために **DchaService** を使用します。
-
-## ダウンロード
-
-> [!TIP]
-> 容量が大きいため、ネットワークが不安定な場合時間がかかる可能性があります。
-
-[**EnableGPlayWithPC**.zip](https://drive.usercontent.google.com/download?id=1TpoUzxpshhr7mFDoYffArNWFo9tCWsBD)
