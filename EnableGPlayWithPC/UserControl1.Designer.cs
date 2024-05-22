@@ -36,8 +36,7 @@
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkedListBox1.AutoSize = true;
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
@@ -49,7 +48,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.AutoSize = true;
             this.textBox1.Location = new System.Drawing.Point(0, 228);
             this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
@@ -61,7 +60,7 @@
             // 
             // button
             // 
-            this.button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button.AutoSize = true;
             this.button.BackColor = System.Drawing.SystemColors.Control;
             this.button.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.button.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -78,9 +77,7 @@
             // 
             // linkLabel1
             // 
-            // 35~43
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom - 35 | System.Windows.Forms.AnchorStyles.Left)));
-            //this.linkLabel1.AutoSize = true;
+            this.linkLabel1.AutoSize = true;
             this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.linkLabel1.Location = new System.Drawing.Point(3, 418);
             this.linkLabel1.Name = "linkLabel1";

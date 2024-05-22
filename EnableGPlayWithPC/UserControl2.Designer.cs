@@ -67,9 +67,9 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(3, 34);
+            this.label1.Location = new System.Drawing.Point(153, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(896, 25);
+            this.label1.Size = new System.Drawing.Size(743, 29);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
